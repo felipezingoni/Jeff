@@ -1,0 +1,26 @@
+.logo-footer {
+  font-size: 30px;
+  font-family: 'DM Sans', sans-serif;
+  color: rgb(41, 41, 41);
+  font-weight: 300;
+  span {
+    font-weight: 800;
+  }
+}
+
+.circle-svg {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: white;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 3px #c8c8c8b0;
+  .e-font-icon-svg {
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    display: block;
+  }
+}

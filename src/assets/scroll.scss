@@ -1,0 +1,30 @@
+
+.sec-conta{
+  z-index: -1;
+  position: relative;
+
+  .sec-all {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+
+    .sec-scroll {
+    width: 1400px;
+    margin-right: 131px;
+    margin-left: 131px;
+    h3 {
+      color: rgb(140, 140, 140);
+      font-size: 48px;
+      position: absolute;
+      font-weight: 600;
+      left: -5%;
+      top: 54%;
+    }
+    .img-scroll {
+      width:1400px;
+      height:600px;
+    }
+  }
+  }
+}

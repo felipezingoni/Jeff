@@ -1,0 +1,102 @@
+
+@font-face {
+  font-family: 'Futura Condensed Bold';
+  src:url('./fonts/Futura Condensed Bold.otf')format('opentype');
+}
+@font-face {
+  font-family: "Acumin Pro Extracondenser medium";
+  src: url('./fonts/acumin-pro-extra-condensed-med.otf')format('opentype');
+}
+@font-face {
+  font-family: "Trump Gothic";
+  src: url('./fonts/trump_gothic_east_bold.ttf')format('opentype');
+}
+
+.proyects {
+  section {
+    height: 100vh;
+  }
+}
+.my-atropos {
+  width: 143px;
+  height: 143px;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nike-title{
+  font-family: 'Futura Condensed Bold' !important;
+  font-size: 150px;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  left: -366px;
+  top: -101px;
+
+}
+
+.beton-title {
+  font-family: "Acumin Pro Extracondenser medium";
+  letter-spacing: 4px;
+  font-size: 138px;
+  font-weight: 800;
+  color: rgb(33, 37, 41);
+  position: relative;
+  left: 308px;
+  top: -133px;
+  height: 139px;
+  text-align: center;
+}
+
+.beton-sub {
+  font-family: "Acumin Pro Extracondenser medium";
+  font-size: 30px;
+  letter-spacing: 11px;
+  text-align: center;
+  color: rgb(33, 37, 41);
+  position: relative;
+  left: 308px;
+  top: -113px;
+}
+
+.zinma-title {
+  font-family: "Trump Gothic";
+  font-size: 150px;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  left: -366px;
+  top: -101px;
+}
+
+.logo-proyect {
+  width: 123px !important;
+  background: black;
+  border-radius: 16px;
+  margin: 20px;
+  box-shadow:0px 0px 11px 3px rgb(248 248 248 / 33%)
+}
+.logo-proyect2{
+  // width: 123px !important;
+  // height: 123px;
+  // background: rgb(239, 239, 239);
+  // border-radius: 16px;
+  // margin: 20px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // box-shadow: 0px 0px 11px 3px rgb(248 248 248 / 33%)
+  width: 123px !important;
+  height: 123px;
+  background: rgb(255 255 255);
+  border-radius: 16px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 11px 3px rgb(192 192 192)
+}

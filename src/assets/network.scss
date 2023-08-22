@@ -1,0 +1,111 @@
+.app-icon {
+  z-index: 2;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  margin-right: 20px;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+  margin: 0 !important;
+}
+
+.cmd-dock {
+  width: 880px;
+  background-color: rgba(255, 255, 255, .85);
+  border-radius: 16px;
+  align-items: center;
+  padding: 16px;
+  transition: box-shadow .4s;
+  display: flex;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .05), 0 10px 16px -3px rgba(0, 0, 0, .1);
+}
+.tile {
+  background-color: #f7f7f9;
+  border-radius: 32px;
+  height: 328px;
+  padding: 32px;
+}
+
+.cmd {
+  width: 74px;
+  background-color: transparent;
+  border: 4px solid transparent;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cmd:hover {
+  background-color: rgba(0, 0, 0, .16);
+  display: flex;
+  justify-content: center;
+  width: 74px;
+  padding: 0px;
+}
+
+.cmd-info {
+  .tetx {
+    border: 1px solid #cccccf;
+    padding: 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+  }
+  .notion{
+    cursor: pointer;
+    width: 210px;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    flex-direction: column;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 6px 8px;
+    display: flex;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    .notion-title {
+      color: #000;
+      letter-spacing: .4px;
+      font-family: Neue Montreal,sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0;
+    }
+    .notion-subtitle{
+      color: #727272b3;
+      letter-spacing: .4px;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+    }
+    hr {
+      width: 100%;
+      height: 0.5px;
+      background-color: #cfcfcf;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      border-color:#cfcfcf ;
+    }
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  .title-2 {
+    color: #727272;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    margin-left: 6px;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,Oxygen,Fira Sans,Droid Sans,sans-serif;
+    font-size: 12px;
+    line-height: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+.secto-text {
+  height: 120vh !important;
+  font-size: 70px;
+  line-height: 1.12;
+  background-color: #F0F0F0 !important;
+  z-index: 1;
+  position: relative;
+  color: black;
+  padding: 30px;
+
+
+  .paragh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-family: 'DM Sans', sans-serif !important;
+      font-weight: 100 !important;
+
+      span {
+        font-family: 'Futura Condensed Bold';
+
+      }
+    }
+  }
+}
+.mini-title {
+  font-size: 15px;
+  text-align: start;
+  padding: 30px;
+  color: black;
+}

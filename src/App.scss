@@ -1,0 +1,239 @@
+// .App {
+//   text-align: center;
+//   height: 100vh;
+//   position: relative;
+//   background-color: #f0f0f0;
+//   overflow: hidden;
+//   /* Para evitar que la nube se salga del contenedor */
+// }
+
+
+// .cloud {
+//   width: 494px;
+//   height: 524px;
+//   background-color: rgba(198, 235, 201, 0.88);
+//   border-radius: 30px;
+//   position: absolute;
+//   transform: translate(-50%, -50%);
+//   transition: transform 0.1s ease;
+//   backdrop-filter: blur(271px);
+//   pointer-events: none;
+//   filter: blur(37px);
+//   opacity: 0.8;
+//   pointer-events: none;
+// }
+
+
+// where gooey magic happens
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=DM+Serif+Text&display=swap');
+.App {
+  text-align: center;
+  // height: 100vh;
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+
+  .background-content {
+      position: relative;
+      z-index: 2;
+      color: rgba(255, 255, 255, 0);
+      text-align: center;
+
+    h1 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 180px;
+        font-weight: 800;
+        color: rgb(41, 41, 41);
+
+        span {
+          font-weight: 200;
+        }
+      }
+
+      p {
+        font-family: 'DM Serif Text', serif;
+        color: rgba(222, 222, 222, 0.792);
+        font-size: 50px;
+      }
+    }
+}
+
+.cell {
+  filter: url('#goo');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(198, 235, 201, 0.88);
+  border-radius: 30px;
+  transition: transform 0.1s ease;
+  backdrop-filter: blur(271px);
+  pointer-events: none;
+  filter: blur(17px);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@keyframes center {
+  0% {
+    transform: scale(2);
+  }
+
+  40% {
+    transform: scale(1.8);
+  }
+
+  90% {
+    transform: scale(2);
+  }
+}
+
+@keyframes top {
+  0% {
+    transform: translate(0px, -60px);
+  }
+
+  60% {
+    transform: translate(20px, -80px);
+  }
+
+  100% {
+    transform: translate(0px, -100px);
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translate(-100px, -80px);
+  }
+
+  50% {
+    transform: translate(-90px, -70px);
+  }
+
+  100% {
+    transform: translate(-80px, 0px);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translate(110px, -40px);
+  }
+
+  60% {
+    transform: translate(90px, -150px);
+  }
+
+  100% {
+    transform: translate(80px, -120px);
+  }
+}
+
+@keyframes bottom-left {
+  0% {
+    transform: translate(-60px, 110px);
+  }
+
+  40% {
+    transform: translate(-40px, 140px);
+  }
+
+  100% {
+    transform: translate(-80px, 70px);
+  }
+}
+
+@keyframes bottom-right {
+  0% {
+    transform: translate(40px, 70px);
+  }
+
+  40% {
+    transform: translate(100px, 50px);
+  }
+
+  100% {
+    transform: translate(150px, 100px);
+  }
+}
+
+.blob {
+  position: absolute;
+    background: rgb(128, 226, 128);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-top: -80px;
+    margin-left: -80px;
+    transform: scale(2);
+    animation: center 2s ease-in-out infinite alternate;
+  // position: absolute;
+  // background: rgb(128, 226, 128);
+  // width: 100px;
+  // height: 100px;
+  // border-radius: 100%;
+  // margin-top: -50px;
+  // margin-left: -50px;
+  // transform: scale(2);
+  // animation: center 2s ease-in-out infinite alternate;
+
+  &:nth-child(1).first-blob {
+      animation: none;
+      /* Remove animation for the first blob */
+      transform: translate(-50px, -50px);
+      /* Adjust the transform for the first blob */
+    }
+
+  &:nth-child(2) {
+    animation-name: top;
+  }
+
+  &:nth-child(4) {
+    animation-name: bottom-left;
+  }
+
+  &:nth-child(3) {
+    animation-name: bottom-right;
+  }
+
+  &:nth-child(5) {
+    animation-name: left;
+  }
+
+  &:nth-child(6) {
+    animation-name: right;
+  }
+}
+
+.blob2 {
+  position: absolute;
+  background: rgb(128, 226, 128);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  transform: scale(2);
+  animation: center 2s ease-in-out infinite alternate;
+  top: 240px;
+  left: 45px;
+}
+.blob3 {
+  position: absolute;
+  background: rgb(128, 226, 128);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  transform: scale(1.5);
+  animation: center 1s ease-in-out infinite alternate;
+  top: 140px;
+  left: 245px;
+}
+
+/* Oculta el cursor predeterminado y ajusta el círculo del cursor */
+html {
+  cursor: none !important;
+}
