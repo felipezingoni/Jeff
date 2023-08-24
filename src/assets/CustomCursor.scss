@@ -5,7 +5,7 @@
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: fixed;
-  background: white;
+  background: rgb(155, 155, 155);
   // border: 1px solid black;
   mix-blend-mode: difference;
   transition: width 0.25s ease-in-out, height 0.25s ease-in-out;
@@ -38,9 +38,7 @@
 
 }
 
-.slider-drag {}
 
-.hamburger {}
 
 @keyframes fadeIn {
   0% {

@@ -77,7 +77,7 @@ const Proyects = () => {
               </div>
             </Atropos>
           </div>
-          <video src="https://res.cloudinary.com/dmmdvpbbz/video/upload/v1692725814/Jeff/Grabacio%CC%81n_de_pantalla_2023-08-21_a_la_s_15.45.34_rozh7n.mov" autoPlay loop muted playsInline width={850} className='video-second' />
+          <video src="https://res.cloudinary.com/dmmdvpbbz/video/upload/v1692803215/Grabacio%CC%81n_de_pantalla_2023-08-23_a_la_s_11.58.30_rjn7qc.mov" autoPlay loop muted playsInline width={850} className='video-second' />
           <h1 className='beton-title'>BETON.</h1>
           <p className='beton-sub '>ARQUITECTURA</p>
         </div>

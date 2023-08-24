@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <div className='container d-flex justify-content-between align-items-center'>
-      <p>Jeff Studio</p>
+      <p>Zeff</p>
       <div className=''>
         <input id='menu-hamburger' type='checkbox' />
 

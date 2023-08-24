@@ -53,7 +53,7 @@ function App() {
 
 
   return (
-    <div className="App" onMouseMove={handleMouseMove}>
+    <div className="App " onMouseMove={handleMouseMove}>
       <CustomCursor />
       {isLoading ? <Loader /> : null}
       <div >

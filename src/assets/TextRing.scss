@@ -1,0 +1,60 @@
+.text-re {
+  display: grid;
+  place-items: center;
+  min-height: 21vh;
+  width: 100px;
+  height: fit-content;
+  position: relative;
+  top: 249px;
+  left: 1291px;
+  font-family: 'Google Sans', sans-serif, system-ui;
+  overflow: hidden;
+  color: black;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.ring:first-of-type {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+
+.text-ring {
+  --inner-angle: calc((360 / var(--char-count)) * 1deg);
+  --character-width: 1;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 10px !important;
+  position: relative;
+  box-shadow: none;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: rotation 6s infinite linear;
+  }
+
+  @keyframes rotation {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .char {
+    display: inline-block;
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(calc(var(--inner-angle) * var(--char-index))) translateY(var(--radius));
+  }
+}

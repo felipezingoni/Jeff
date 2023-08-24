@@ -1,6 +1,20 @@
 .sce {
   height: 90vh;
 }
+.gradient-background {
+  background: linear-gradient(135deg, #64a3dfd1, #fffbb887);
+  animation: gradientAnimation 2s ease infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
 
 .arrow{
   // position: absolute;

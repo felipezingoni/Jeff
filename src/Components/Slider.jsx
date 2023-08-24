@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import '../assets/slider.scss';
+import Spline from '@splinetool/react-spline';
+import TextRing from './TextRing';
 import { TweenMax, Power2, Elastic } from 'gsap'; // Importa los módulos TweenMax que estás usando
 
 const Slider = () => {
@@ -100,7 +102,9 @@ const Slider = () => {
   return (
     <div>
       <div className="sce">
-        <h1>Jeff <span>Studio</span></h1>
+        <h1>Zeff <span>Studio</span></h1>
+        {/* <Spline scene="https://prod.spline.design/zzl5GTX6HKr9sQx4/scene.splinecode" /> */}
+        <TextRing/>
         <p>We Create <span>DIGITAL PRODUCTS</span></p>
       </div>
       <div className='arrow'>

@@ -64,7 +64,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(198, 235, 201, 0.88);
+  background-color: rgba(234, 237, 149, 0.88);
   border-radius: 30px;
   transition: transform 0.1s ease;
   backdrop-filter: blur(271px);
@@ -160,7 +160,7 @@
 
 .blob {
   position: absolute;
-    background: rgb(128, 226, 128);
+    background: rgba(219, 190, 99, 0.88);
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -208,7 +208,7 @@
 
 .blob2 {
   position: absolute;
-  background: rgb(128, 226, 128);
+  background: rgba(219, 190, 99, 0.88);
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -221,7 +221,7 @@
 }
 .blob3 {
   position: absolute;
-  background: rgb(128, 226, 128);
+  background: rgba(219, 190, 99, 0.88);
   width: 30px;
   height: 30px;
   border-radius: 50%;
