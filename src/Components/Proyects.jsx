@@ -41,6 +41,7 @@ const Proyects = () => {
           trigger: selector,
           start: 'top 70%',
           end: 'bottom 70%',
+          duration:5,
           scrub: true,
           opacity: 0,
           onUpdate: (self) => {
@@ -57,6 +58,8 @@ const Proyects = () => {
   return(
     <div className='proyects' >
       <h5 className='mini-title m-5'>OUR PROYECTS</h5>
+      <br />
+      <br />
       <section className='secto' style={{ backgroundColor: '#202020' }}>
         <div>
           <div className='d-flex justify-content-start' style={{width:'123px'}}>
@@ -66,6 +69,7 @@ const Proyects = () => {
           </div>
           <video src="https://res.cloudinary.com/dmmdvpbbz/video/upload/v1692725769/Jeff/Grabacio%CC%81n_de_pantalla_2023-08-21_a_la_s_14.37.03_wpw7ha.mov" autoPlay loop muted playsInline width={850} className='video-first'/>
           <h1 className='nike-title'>NIKE</h1>
+          <p className='p-nike'>Web Design/ UX&UI / Web Development / Ecommerce</p>
         </div>
       </section>
       <section className='secto' style={{ backgroundColor: '#F0F0F0' }}>
@@ -80,6 +84,7 @@ const Proyects = () => {
           <video src="https://res.cloudinary.com/dmmdvpbbz/video/upload/v1692803215/Grabacio%CC%81n_de_pantalla_2023-08-23_a_la_s_11.58.30_rjn7qc.mov" autoPlay loop muted playsInline width={850} className='video-second' />
           <h1 className='beton-title'>BETON.</h1>
           <p className='beton-sub '>ARQUITECTURA</p>
+          <p className='p-beton'>Web Design/ UX&UI / Web Development</p>
         </div>
       </section>
       <section className='secto' style={{ backgroundColor: '#202020' }}>
@@ -93,6 +98,7 @@ const Proyects = () => {
           </div>
           <video src="https://res.cloudinary.com/dmmdvpbbz/video/upload/v1692725762/Jeff/Grabacio%CC%81n_de_pantalla_2023-08-21_a_la_s_16.19.51_mnsaqn.mov" autoPlay loop muted playsInline width={850} className='video-third' />
           <h1 className='zinma-title'><strong>Zinma</strong> Seeds</h1>
+          <p className='p-nike'>Web Design/ UX&UI / Web Development</p>
         </div>
       </section>
       <section className='secto' style={{ backgroundColor: '#F0F0F0' }}>
@@ -106,6 +112,7 @@ const Proyects = () => {
           </div>
           <video src="https://res.cloudinary.com/dmmdvpbbz/video/upload/v1692725724/Jeff/Grabacio%CC%81n_de_pantalla_2023-08-22_a_la_s_14.04.21_l6i0sn.mov" autoPlay loop muted playsInline width={850} className='video-four' />
           <h1 className='beton-title'>Ski Company</h1>
+          <p className='p-beton'>Web Design/ UX&UI / Web Development / Ecommerce</p>
         </div>
       </section>
     </div>

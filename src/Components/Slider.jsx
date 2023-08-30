@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../assets/slider.scss';
 import Spline from '@splinetool/react-spline';
 import TextRing from './TextRing';
 import { TweenMax, Power2, Elastic } from 'gsap'; // Importa los módulos TweenMax que estás usando
 
 const Slider = () => {
+  const [animationProgress, setAnimationProgress] = useState(0);
+  const [titleText, setTitleText] = useState('');
   useEffect(() => {
     // Scroll to top animation
     const scrollToTop = () => {
@@ -97,15 +99,39 @@ const Slider = () => {
     scrollToTop();
     handleScroll();
     new HoverButton(scrollToTopBtn);
+
+
+    const titleTextFull = "We create digital products";
+    const animationDuration = 2;
+    const stepDuration = animationDuration / titleTextFull.length;
+    const initialDelay = 3; // Retraso inicial en segundos
+    let currentStep = 0;
+
+    const writeTitle = () => {
+      if (currentStep <= titleTextFull.length) {
+        setTitleText(titleTextFull.slice(0, currentStep));
+        currentStep++;
+        setAnimationProgress(currentStep / titleTextFull.length);
+        setTimeout(writeTitle, stepDuration * 1000);
+      }
+    };
+
+    setTimeout(writeTitle, initialDelay * 1000);
+
   }, []);
 
   return (
     <div>
       <div className="sce">
-        <h1>Zeff <span>Studio</span></h1>
+        <h1>
+          <span>{titleText}</span> <br />
+        </h1>
+        {/* <h1><span>We are <br /> digital </span> <br /> Creators</h1> */}
+        {/* <h1>Zeff <span>Studio</span></h1> */}
         {/* <Spline scene="https://prod.spline.design/zzl5GTX6HKr9sQx4/scene.splinecode" /> */}
         <TextRing/>
-        <p>We Create <span>DIGITAL PRODUCTS</span></p>
+        <p className='text-rep'>Zeff Studio</p>
+        {/* <p>We Create <span>DIGITAL PRODUCTS</span></p> */}
       </div>
       <div className='arrow'>
         <a href="#top">

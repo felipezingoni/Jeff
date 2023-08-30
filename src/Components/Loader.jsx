@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import '../assets/loader.scss';
 
 const Loader = () => {
-  const letters = 'ABCDEFGHIJ';
+  const letters = 'AFGHIJKLMNÑOPQRSTUVWXYZ';
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

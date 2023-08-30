@@ -93,7 +93,7 @@ input:checked~label .hamburger:after {
 }
 
 #menuo {
-  z-index: 9001;
+  z-index: -1;
   position: fixed;
   top: 40%;
   left: 50%;

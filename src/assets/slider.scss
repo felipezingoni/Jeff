@@ -1,5 +1,9 @@
 .sce {
   height: 90vh;
+  h1 {
+    width: 70%;
+    margin: auto;
+  }
 }
 .gradient-background {
   background: linear-gradient(135deg, #64a3dfd1, #fffbb887);
@@ -50,4 +54,14 @@
     margin: auto;
     // height: 20px;
   }
+}
+
+.text-rep {
+  width: fit-content;
+  rotate: 270deg;
+  position: absolute;
+  top: 364px;
+  font-size: 30px !important;
+  color: white !important;
+  font-family: 'DM Sans' !important;
 }
