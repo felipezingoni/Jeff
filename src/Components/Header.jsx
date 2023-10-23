@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <div className='container d-flex justify-content-between align-items-center'>
-      <p>Zeff</p>
+      <img style={{width:'100px'}} src="https://res.cloudinary.com/dmmdvpbbz/image/upload/v1698072642/Jeff/FZ_negro_rxv4sw.png" alt="" />
       <div className=''>
         <input id='menu-hamburger' type='checkbox' />
 
