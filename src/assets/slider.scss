@@ -76,3 +76,19 @@
     left: -35px;
     width: 114%;
 }
+
+@media (max-width: 768px) {
+  .comingsoon {
+      rotate: 317deg;
+      position: absolute;
+      top: 319px;
+      left: -108px;
+      width: 156%;
+  }
+  .App .background-content h1 {
+    font-size: 80px;
+  }
+  .text-rep {
+    display: none;
+  }
+}
