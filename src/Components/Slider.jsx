@@ -120,6 +120,13 @@ const Slider = () => {
 
   }, []);
 
+  const downloadPortfolio = () => {
+    // Ruta al archivo PDF en tu proyecto, ajusta la ruta según tu estructura de archivos.
+    const pdfFilePath = '../public/pdf/Zeff Studio_portfolio y presupuesto_compri +alta.pdf';
+
+    // Abre el PDF en una nueva pestaña (_blank).
+    window.open(pdfFilePath, '_blank');
+  };
   return (
     <div>
       <h1 className='comingsoon'>COMING SOON</h1>
@@ -127,6 +134,7 @@ const Slider = () => {
         <h1>
           <span>{titleText}</span> <br />
         </h1>
+        <button className='button-4' role="button" onClick={downloadPortfolio}>Download Portfolio</button>
         {/* <h1><span>We are <br /> digital </span> <br /> Creators</h1> */}
         {/* <h1>Zeff <span>Studio</span></h1> */}
         {/* <Spline scene="https://prod.spline.design/zzl5GTX6HKr9sQx4/scene.splinecode" /> */}
