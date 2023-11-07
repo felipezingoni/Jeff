@@ -122,7 +122,7 @@ const Slider = () => {
 
   const downloadPortfolio = () => {
     // Ruta al archivo PDF en tu proyecto, ajusta la ruta según tu estructura de archivos.
-    const pdfFilePath = '../public/pdf/Zeff Studio_portfolio y presupuesto_compri +alta.pdf';
+    const pdfFilePath = 'https://storage.googleapis.com/zeffstudio/Zeff%20Studio_portfolio%20y%20presupuesto_compri%20alta.pdf';
 
     // Abre el PDF en una nueva pestaña (_blank).
     window.open(pdfFilePath, '_blank');
