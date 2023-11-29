@@ -34,7 +34,7 @@ const Header = () => {
           </div>
         </label>
 
-        <ul id='menuo' className={menuOpen ? 'menu-open' : ''}>
+        {/* <ul id='menuo' className={menuOpen ? 'menu-open' : ''}>
           <li className='lin3'>
             <a href='#' className='link-header'>
               Home
@@ -46,7 +46,7 @@ const Header = () => {
               Contact
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );

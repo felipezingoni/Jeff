@@ -77,7 +77,7 @@ const Proyects = () => {
           <div className='d-flex justify-content-end' >
             <Atropos className="my-atropos">
               <div className='logo-proyect2'>
-                <img src="https://res.cloudinary.com/ddlmgs04n/image/upload/v1682381877/Beton/Logo_op1amg.svg" width={65} alt="" />
+                <img src="https://res.cloudinary.com/dpy9qeoty/image/upload/v1700608937/Beton%20web/Logo_op1amg_i1hdwk.svg" alt="" />
               </div>
             </Atropos>
           </div>

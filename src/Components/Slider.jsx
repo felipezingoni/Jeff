@@ -129,7 +129,7 @@ const Slider = () => {
   };
   return (
     <div>
-      <h1 className='comingsoon'>COMING SOON</h1>
+      {/* <h1 className='comingsoon'>COMING SOON</h1> */}
       <div className="sce">
         <h1>
           <span>{titleText}</span> <br />

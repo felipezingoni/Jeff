@@ -8,23 +8,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 const selectedImages = [
   {
-    url: 'https://res.cloudinary.com/ddlmgs04n/image/upload/v1673620221/Zinma2.0/DSC06257_1_d0c22j_ie6t7u.webp',
+    url: 'https://res.cloudinary.com/dmmdvpbbz/image/upload/v1701081277/Jeff/Captura_de_pantalla_2023-11-17_a_la_s_17.21.50_zcowyl.png',
   },
   {
-    url: 'https://res.cloudinary.com/ddlmgs04n/image/upload/v1673619922/Zinma2.0/Frame_206_ux6sbv_m5peqi.webp',
+    url: 'https://res.cloudinary.com/dmmdvpbbz/image/upload/v1701081282/Jeff/image14_ajegec.jpg',
   },
   {
-    url: 'https://res.cloudinary.com/ddlmgs04n/image/upload/v1673619765/Zinma2.0/DJI_0874_1_hflxst_jrk8wf.webp',
+    url: 'https://res.cloudinary.com/dmmdvpbbz/image/upload/v1701189231/Jeff/iPad_Pro_12.9__-_SEGUNDO_PASO_shsrj5.png',
   },
   {
-    url: 'https://res.cloudinary.com/ddlmgs04n/image/upload/v1673619888/Zinma2.0/Frame_205_tamood_aw5sxu.webp',
+    url: 'https://res.cloudinary.com/dmmdvpbbz/image/upload/v1701081284/Jeff/image19_sac33q.png',
   },
   {
-    url: 'https://res.cloudinary.com/ddlmgs04n/image/upload/v1684183776/living_q4mbdn.jpg',
+    url: 'https://res.cloudinary.com/dmmdvpbbz/image/upload/v1701081876/Jeff/image18_nq8cd3.png',
   },
-  {
-    url: 'https://res.cloudinary.com/ddlmgs04n/image/upload/v1689264661/Beton/CAM002_vrtvln.jpg',
-  },
+  // {
+  //   url: 'https://res.cloudinary.com/dmmdvpbbz/image/upload/v1701189231/Jeff/iPad_Pro_12.9__-_PRIMER_PASO_cidvx2.png',
+  // },
+  // {
+  //   url: 'https://res.cloudinary.com/dmmdvpbbz/image/upload/v1701189639/Jeff/image17_hpz5t4.png',
+  // },
 ];
 
 const randomImages = [...Array(4)].map(() => {
@@ -109,7 +112,7 @@ const Images = () => {
       ))}
 
       <section className="demo-text">
-        <div className="wrapper text">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+        <div className="wrapper text">ZeffStudioZeffStudioZeffStudioZeffStudio</div>
       </section>
     </div>
   );

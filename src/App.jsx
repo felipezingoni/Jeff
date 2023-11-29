@@ -66,8 +66,10 @@ function App() {
         <Proyects/>
         <Images />
 
+
         {/* <div style={{ height: '100vh' }}>
           <Network />
+
         </div>
         < Words/>
         < Insta/>

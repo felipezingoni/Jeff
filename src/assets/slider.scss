@@ -76,6 +76,9 @@
     left: -35px;
     width: 114%;
 }
+.porpo {
+  text-decoration: none;
+}
 
 @media (max-width: 768px) {
   .comingsoon {
@@ -91,4 +94,80 @@
   .text-rep {
     display: none;
   }
+  .logo-proyect {
+    width: 80px !important;
+  }
+  video {
+    width: 397px;
+  }
+  .nike-title {
+    font-size: 90px !important;
+    left: -97px !important;
+    top: -66px !important;
+  }
+
+  .logo-proyect2 {
+    width: 80px !important;
+    height: 80px !important;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+   }
+
+  .beton-title {
+    font-size: 90px !important;
+    left: 108px !important;
+    top: -49px !important;
+  }
+  .beton-sub {
+    font-size: 14px !important;
+    left: 109px !important;
+    top: -113px !important;
+    margin-bottom: 20px;
+  }
+
+  .zinma-title {
+    font-size: 90px !important;
+    left: -32px !important;
+    top: -58px !important;
+  }
+
+  .p-nike, .p-beton {
+    font-size: 17px !important;
+    padding-right: 45px;
+    padding-left: 45px;
+    top: 0 !important;
+  }
+  .secto-text .paragh p {
+    font-size: 33px;
+  }
+
+  .secto-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sec-conta .sec-all .sec-scroll h3 {
+    font-size: 30px !important;
+  }
+  .sec-conta .sec-all .sec-scroll {
+    width: 380px !important;
+  }
+  .pe {
+    font-size: 16px !important;
+    width: 366px;
+  }
+  .img-scroll {
+    width: 485px !important;
+    height: 300px !important;
+  }
+  .porpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
 }
