@@ -3,7 +3,7 @@ import '../assets/Footer.scss';
 
 const Footer = () => {
   return(
-    <div className='container'>
+    <div className='' style={{ zIndex: 1000, position: 'relative', backgroundColor: '#F0F0F0'}}>
       <hr />
       <div className='d-flex align-items-center flex-row justify-content-around' style={{ height:'200px' }}>
         <div>

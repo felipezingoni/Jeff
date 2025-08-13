@@ -57,9 +57,9 @@ const Proyects = () => {
 
   return(
     <div className='proyects' >
-      <h5 className='mini-title m-5'>OUR PROYECTS</h5>
+      {/* <h5 className='mini-title m-5'>OUR PROYECTS</h5>
       <br />
-      <br />
+      <br /> */}
       <section className='secto' style={{ backgroundColor: '#202020' }}>
         <div>
           <div className='d-flex justify-content-start' style={{width:'123px'}}>

@@ -2,7 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../assets/slider.scss';
 import Spline from '@splinetool/react-spline';
 import TextRing from './TextRing';
-import { TweenMax, Power2, Elastic } from 'gsap'; // Importa los módulos TweenMax que estás usando
+import { TweenMax, Power2, Elastic, gsap } from 'gsap'; // Importa los módulos TweenMax que estás usando
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Slider = () => {
   const [animationProgress, setAnimationProgress] = useState(0);
@@ -118,6 +121,29 @@ const Slider = () => {
 
     setTimeout(writeTitle, initialDelay * 1000);
 
+
+    const video = document.querySelector(".background-video");
+    const overlay = document.querySelector(".video-overlay");
+
+    gsap.to(video, {
+      scale: 2,
+      scrollTrigger: {
+        trigger: ".overlay-trigger-section",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+      },
+    });
+
+    gsap.to(overlay, {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".overlay-trigger-section",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+      },
+    });
   }, []);
 
   const downloadPortfolio = () => {
@@ -129,15 +155,23 @@ const Slider = () => {
   };
   return (
     <div>
-      {/* <h1 className='comingsoon'>COMING SOON</h1> */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="background-video"
+      >
+        <source
+          src="https://res.cloudinary.com/dmmdvpbbz/video/upload/v1753716138/6077634_Ring_3d_Vj_Experimental_By_Juanjo_McLittle_Artlist_HD_s1k4kv.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div className="video-overlay" />
       <div className="sce">
         <h1>
           <span>{titleText}</span> <br />
         </h1>
-        <button className='button-4' role="button" onClick={downloadPortfolio}>Download Portfolio</button>
-        {/* <h1><span>We are <br /> digital </span> <br /> Creators</h1> */}
-        {/* <h1>Zeff <span>Studio</span></h1> */}
-        {/* <Spline scene="https://prod.spline.design/zzl5GTX6HKr9sQx4/scene.splinecode" /> */}
         <TextRing/>
         <p className='text-rep'>Zeff Studio</p>
         {/* <p>We Create <span>DIGITAL PRODUCTS</span></p> */}
