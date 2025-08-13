@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.scss';
-import { useSpring, config } from '@react-spring/web';
-import CustomCursor from './Components/CustomCursor';
-import Cell from './Components/CellComponents/Cell';
+// import { useSpring, config } from '@react-spring/web';
+// import CustomCursor from './Components/CustomCursor';
+// import Cell from './Components/CellComponents/Cell';
 import Header from "./Components/Header";
 // import Network from "./Components/Network";
 // import Words from "./Components/Words";
@@ -11,29 +11,29 @@ import Slider from "./Components/Slider";
 // import Scroll from "./Components/Scroll";
 import Images from "./Components/Images";
 // import Insta from "./Components/Insta";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import Proyects from "./Components/Proyects";
 import Text from "./Components/Text";
-import ListItems from './components/ListItems';
+import ListItems from './Components/ListItems';
 
 
 
 function App() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isLoading, setIsLoading] = useState(true);
 
-  const cellStyle = {
-    position: 'absolute',
-    top: mousePosition.y,
-    left: mousePosition.x,
-    transform: 'translate(-280%, -200%)', // Center the Cell
-  };
+  // const cellStyle = {
+  //   position: 'absolute',
+  //   top: mousePosition.y,
+  //   left: mousePosition.x,
+  //   transform: 'translate(-280%, -200%)', // Center the Cell
+  // };
 
-  const handleMouseMove = (event) => {
-    const x = event.clientX;
-    const y = event.clientY;
-    setMousePosition({ x, y });
-  };
+  // const handleMouseMove = (event) => {
+  //   const x = event.clientX;
+  //   const y = event.clientY;
+  //   setMousePosition({ x, y });
+  // };
 
   // const blobStyle = useSpring({
   //   to: { transform: `translate3d(${mousePosition.x - 0 }px, ${mousePosition.y - 0 }px, 0)` },
@@ -54,7 +54,7 @@ function App() {
 
 
   return (
-    <div className="App " onMouseMove={handleMouseMove} >
+    <div className="App " >
       {/* <CustomCursor /> */}
       {isLoading ? <Loader /> : null}
       <div >
