@@ -14,7 +14,7 @@ import Images from "./Components/Images";
 import Footer from "./Components/Footer";
 import Proyects from "./Components/Proyects";
 import Text from "./Components/Text";
-import ListItems from "./components/ListItems";
+import ListItems from './components/ListItems';
 
 
 
